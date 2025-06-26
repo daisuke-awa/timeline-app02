@@ -166,17 +166,13 @@
         import { getFirestore, collection, doc, addDoc, setDoc, deleteDoc, onSnapshot, query, orderBy, writeBatch } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
         // --- 設定 ---------------------------------------------------
-        // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyC5fwufh6LJRKmXxdAHLxCByPcIPRZcFiE",
   authDomain: "team-timeline-app02.firebaseapp.com",
   projectId: "team-timeline-app02",
-  storageBucket: "team-timeline-app02.firebasestorage.app",
+  storageBucket: "team-timeline-app02.appspot.com",
   messagingSenderId: "86921543288",
   appId: "1:86921543288:web:4deb62c2146e4855cff78d"
 };
@@ -186,7 +182,6 @@ const appId = firebaseConfig.projectId; // プロジェクトIDをappIdとして
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
         
-        const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
         const auth = getAuth(app);
 
